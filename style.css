@@ -41,6 +41,15 @@ header {
 
 }
 
+.titulo {
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo img{
+    width: 80px;
+}
+
 .titulo , li {
     text-transform: uppercase;
 }
@@ -308,12 +317,24 @@ body {
 header {
     background-image: linear-gradient(to right, rgba(17, 17, 17, 0.85) , rgba(20, 20, 20, 0.9)), url(img/homem.jpg);
     background-position: left center;
-    height: 97vh;
+    height: 90vh;
+    padding: 0;
 }
 
 .cabecalho {
     display: flex;
     justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+}
+
+.cabecalho h1 {
+    display: none;
+}
+
+.titulo img {
+    display: inline;
+    height: 100px;
 }
 
 .titulo {
@@ -330,7 +351,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: flex-start;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
 }
 
 #central h2 {
@@ -353,10 +378,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 70vw;
     padding-top: 10px;
     padding-bottom: 40px;
-    padding-right: 20px;
 }
 
 #central .botoes a {
